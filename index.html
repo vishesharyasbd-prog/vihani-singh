@@ -1,0 +1,242 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090513">
+<title>Vihani Queen</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Arial,sans-serif;
+  color:white;
+  background:radial-gradient(ellipse at top,#522071,#170b2b 45%,#07050e 85%);
+  min-height:100vh;
+}
+.container{
+  max-width:500px;
+  margin:auto;
+  padding:24px 17px 35px;
+  text-align:center;
+}
+.tag{
+  display:inline-block;
+  border:1px solid #f8d78b77;
+  background:#ffffff0d;
+  border-radius:30px;
+  padding:10px 17px;
+  font-size:10px;
+  letter-spacing:3px;
+  color:#ffe3a0;
+  margin-bottom:22px;
+  backdrop-filter:blur(15px);
+}
+.poster{
+  position:relative;
+  overflow:hidden;
+  padding:30px 15px 26px;
+  border:2px solid #e9bf68;
+  border-radius:20px;
+  background:
+    radial-gradient(ellipse at 50% 35%,#8d3cbb88,transparent 60%),
+    linear-gradient(145deg,#29113d,#100a20 55%,#30113f);
+  box-shadow:0 0 30px #bd58ff55,inset 0 0 30px #e8bbff13;
+}
+.poster:before{
+  content:"";
+  position:absolute;
+  inset:8px;
+  border:1px solid #e8c77877;
+  border-radius:14px;
+  pointer-events:none;
+}
+.crown{
+  font-size:60px;
+  filter:drop-shadow(0 0 15px #ffd56c);
+  margin-bottom:8px;
+}
+.small{
+  font-size:11px;
+  letter-spacing:5px;
+  color:#ffe8ae;
+}
+h1{
+  font-family:Georgia,serif;
+  font-size:clamp(35px,10vw,54px);
+  line-height:1.1;
+  margin:15px 0;
+  background:linear-gradient(#fff4be,#f8c653 48%,#fff0b0 75%,#bd7bff);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  filter:drop-shadow(0 3px 15px #d8a33e66);
+}
+.line{
+  height:1px;
+  width:75%;
+  margin:17px auto;
+  background:linear-gradient(90deg,transparent,#fbd780,transparent);
+}
+.subtitle{
+  color:#f6dca7;
+  font-size:13px;
+  letter-spacing:2px;
+  line-height:1.8;
+}
+.orb{
+  margin:24px auto 16px;
+  width:115px;
+  height:115px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:55px;
+  background:radial-gradient(circle at 35% 25%,#ffffff55,#c78aff20 35%,#10091c 75%);
+  border:1px solid #e4b9ff88;
+  box-shadow:0 0 35px #a345ff55,inset 0 0 20px #ffffff15;
+}
+.pill{
+  display:inline-block;
+  border:1px solid #e7c47766;
+  border-radius:30px;
+  padding:9px 15px;
+  color:#ffe6a4;
+  font-size:11px;
+  margin:5px 2px;
+  background:#ffffff08;
+}
+.heading{
+  margin-top:27px;
+  font-family:Georgia,serif;
+  font-size:29px;
+  color:#ffe0a0;
+}
+.desc{
+  margin-top:12px;
+  font-size:13px;
+  color:#d3c4e4;
+  line-height:1.8;
+}
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin-top:22px;
+}
+.feature{
+  padding:15px 5px;
+  border:1px solid #ffffff20;
+  background:#ffffff0c;
+  border-radius:13px;
+  backdrop-filter:blur(15px);
+}
+.feature b{display:block;font-size:22px;margin-bottom:8px}
+.feature span{font-size:9px;letter-spacing:.4px;color:#f4e6ff}
+.join{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  margin-top:24px;
+  width:100%;
+  min-height:58px;
+  padding:16px 10px;
+  border-radius:14px;
+  background:linear-gradient(110deg,#fff0b2,#f4c454,#e5b0ff);
+  color:#21102d;
+  text-decoration:none;
+  font-weight:900;
+  font-size:14px;
+  letter-spacing:1px;
+  box-shadow:0 0 28px #d4a74d55;
+  animation:glow 2.5s infinite;
+}
+@keyframes glow{
+  50%{box-shadow:0 0 35px #d4a74d99,0 0 25px #a74bff55}
+}
+.note{
+  font-size:11px;
+  line-height:1.7;
+  color:#a99bb9;
+  margin-top:15px;
+}
+footer{
+  margin-top:25px;
+  padding-top:17px;
+  border-top:1px solid #ffffff18;
+  color:#8d7b9e;
+  font-size:10px;
+  letter-spacing:1px;
+}
+</style>
+</head>
+
+<body>
+<main class="container">
+
+  <div class="tag">✦ PREMIUM SPORTS COMMUNITY ✦</div>
+
+  <section class="poster">
+    <div class="crown">👑</div>
+    <div class="small">WELCOME TO THE WORLD OF</div>
+
+    <h1>VIHANI<br>QUEEN</h1>
+
+    <div class="line"></div>
+
+    <div class="subtitle">
+      SPORTS ANALYSIS<br>
+      MATCH INSIGHTS • STRATEGY
+    </div>
+
+    <div class="orb">🏆</div>
+ <div class="pill">✦ MATCH ANALYSIS</div>
+    <div class="pill">✦ EXPERT INSIGHTS</div>
+    <div class="pill">✦ SPORTS UPDATES</div>
+
+    <div class="line"></div>
+
+    <div class="small">YOUR GAME. YOUR INSIGHTS.</div>
+  </section>
+
+  <h2 class="heading">Join Vihani Queen</h2>
+
+  <p class="desc">
+    Sports analysis, match insights and the latest<br>
+    updates — all in one place.
+  </p>
+
+  <section class="features">
+    <div class="feature">
+      <b>🏆</b>
+      <span>MATCH ANALYSIS</span>
+    </div>
+    <div class="feature">
+      <b>📊</b>
+      <span>EXPERT INSIGHTS</span>
+    </div>
+    <div class="feature">
+      <b>💎</b>
+      <span>SPORTS UPDATES</span>
+    </div>
+  </section>
+
+  <a class="join"
+     href="https://t.me/+CgslPCjmOPI4MzU1"
+     target="_blank"
+     rel="noopener noreferrer">
+    ✈️ JOIN TELEGRAM CHANNEL →
+  </a>
+
+  <p class="note">
+    Follow for sports-related analysis and updates.<br>
+    Sports outcomes are uncertain; no result is guaranteed.
+  </p>
+
+  <footer>© 2026 VIHANI QUEEN</footer>
+
+</main>
+</body>
+</html>
