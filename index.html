@@ -1,124 +1,309 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#090513">
-<title>Vihani Queen</title>
+<meta name="description" content="Vihani Queen - Sports analysis, match insights and sports updates.">
+<title>Vihani Queen | Sports Community</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1922568755792349');
+fbq('track','PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1922568755792349&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-font-family:Arial,sans-serif;color:white;min-height:100vh;
-background:radial-gradient(ellipse at top,#542078,#170b2b 48%,#07050e);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.container{max-width:500px;margin:auto;padding:22px 15px;text-align:center}
-.tag{
-display:inline-block;padding:10px 16px;margin-bottom:20px;
-border:1px solid #f8d78b77;border-radius:30px;
-background:#ffffff0c;color:#ffe3a0;font-size:10px;letter-spacing:2px;
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top, #542078, #170b2b 48%, #07050e);
 }
-.poster{
-position:relative;overflow:hidden;padding:28px 13px 20px;
-border:2px solid #e9bf68;border-radius:20px;
-background:radial-gradient(ellipse at 50% 30%,#843ab899,transparent 60%),
-linear-gradient(145deg,#29113d,#100a20 55%,#30113f);
-box-shadow:0 0 30px #bd58ff55,inset 0 0 30px #e8bbff13;
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 22px 15px;
+  text-align: center;
 }
-.poster:before{
-content:"";position:absolute;inset:7px;
-border:1px solid #e8c77877;border-radius:14px;pointer-events:none;
+
+.tag {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #f8d78b77;
+  border-radius: 30px;
+  background: #ffffff0c;
+  color: #ffe3a0;
+  font-size: 10px;
+  letter-spacing: 2px;
 }
-.crown{font-size:58px;filter:drop-shadow(0 0 15px #ffd56c)}
-.small{font-size:10px;letter-spacing:3px;color:#ffe8ae}
-h1{
-font-family:Georgia,serif;font-size:clamp(36px,10vw,52px);
-line-height:1.08;margin:14px 0;
-background:linear-gradient(#fff4be,#f8c653 48%,#fff0b0 75%,#bd7bff);
--webkit-background-clip:text;background-clip:text;color:transparent;
+
+.poster {
+  position: relative;
+  overflow: hidden;
+  padding: 28px 13px 20px;
+  border: 2px solid #e9bf68;
+  border-radius: 20px;
+  background:
+    radial-gradient(ellipse at 50% 30%, #843ab899, transparent 60%),
+    linear-gradient(145deg, #29113d, #100a20 55%, #30113f);
+  box-shadow: 0 0 30px #bd58ff55,
+              inset 0 0 30px #e8bbff13;
 }
-.line{
-height:1px;width:85%;margin:16px auto;
-background:linear-gradient(90deg,transparent,#fbd780,transparent);
+
+.poster:before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1px solid #e8c77877;
+  border-radius: 14px;
+  pointer-events: none;
 }
-.subtitle{font-size:12px;color:#f6dca7;line-height:1.8;letter-spacing:1px}
-.orb{
-width:100px;height:100px;margin:22px auto 17px;border-radius:50%;
-display:flex;align-items:center;justify-content:center;font-size:48px;
-background:radial-gradient(circle at 35% 25%,#ffffff55,#c78aff20 40%,#10091c);
-border:1px solid #e4b9ff88;box-shadow:0 0 30px #a345ff55;
+
+.crown {
+  font-size: 58px;
+  filter: drop-shadow(0 0 15px #ffd56c);
 }
-.pills{display:flex;justify-content:center;flex-wrap:wrap;gap:7px}
-.pill{
-padding:9px 10px;border:1px solid #e7c47777;border-radius:30px;
-color:#ffe6a4;font-size:10px;background:#ffffff08;
+
+.small {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #ffe8ae;
 }
-.bottom-line{margin-top:19px;font-size:10px;letter-spacing:2px;color:#fff0bd}
-.join{
-position:relative;z-index:2;display:block;margin-top:19px;padding:14px 8px;
-border:1px solid #ffe7a2;border-radius:12px;color:#21102d;
-text-decoration:none;font-weight:900;
-background:linear-gradient(110deg,#fff0b2,#f4c454 48%,#e5b0ff);
-box-shadow:0 0 25px #d4a74d66;
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 10vw, 52px);
+  line-height: 1.08;
+  margin: 14px 0;
+  background: linear-gradient(
+    #fff4be, #f8c653 48%, #fff0b0 75%, #bd7bff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
-.join strong{display:block;font-size:14px;letter-spacing:1px}
-.join span{display:block;font-size:11px;margin-top:6px}
-.note{font-size:10px;line-height:1.7;color:#b5a6c8;margin-top:13px}
-footer{margin-top:20px;padding-top:14px;border-top:1px solid #ffffff18;color:#8d7b9e;font-size:10px}
-@media(max-width:380px){
-.container{padding:16px 11px}
-.poster{padding:24px 10px 17px}
-.pill{font-size:9px;padding:8px}
-.join strong{font-size:13px}
+
+.line {
+  height: 1px;
+  width: 85%;
+  margin: 16px auto;
+  background: linear-gradient(
+    90deg, transparent, #fbd780, transparent
+  );
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #f6dca7;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+.orb {
+  width: 100px;
+  height: 100px;
+  margin: 22px auto 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  background: radial-gradient(
+    circle at 35% 25%, #ffffff55, #c78aff20 40%, #10091c
+  );
+  border: 1px solid #e4b9ff88;
+  box-shadow: 0 0 30px #a345ff55;
+}
+
+.pills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.pill {
+  padding: 9px 10px;
+  border: 1px solid #e7c47777;
+  border-radius: 30px;
+  color: #ffe6a4;
+  font-size: 10px;
+  background: #ffffff08;
+}
+
+.bottom-line {
+  margin-top: 19px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #fff0bd;
+}
+
+.join {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin-top: 19px;
+  padding: 14px 8px;
+  border: 1px solid #ffe7a2;
+  border-radius: 12px;
+  color: #21102d;
+  text-decoration: none;
+  font-weight: 900;
+  background: linear-gradient(
+    110deg, #fff0b2, #f4c454 48%, #e5b0ff
+  );
+  box-shadow: 0 0 25px #d4a74d66;
+  cursor: pointer;
+}
+
+.join strong {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.join span {
+  display: block;
+  font-size: 11px;
+  margin-top: 6px;
+}
+
+.join:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+
+.note {
+  font-size: 10px;
+  line-height: 1.7;
+  color: #b5a6c8;
+  margin-top: 13px;
+}
+ footer {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid #ffffff18;
+  color: #8d7b9e;
+  font-size: 10px;
+}
+
+@media(max-width:380px) {
+  .container {
+    padding: 16px 11px;
+  }
+
+  .poster {
+    padding: 24px 10px 17px;
+  }
+
+  .pill {
+    font-size: 9px;
+    padding: 8px;
+  }
+
+  .join strong {
+    font-size: 13px;
+  }
 }
 </style>
 </head>
+
 <body>
 <main class="container">
 
-<div class="tag">✦ PREMIUM SPORTS COMMUNITY ✦</div>
+  <div class="tag">✦ PREMIUM SPORTS COMMUNITY ✦</div>
 
-<section class="poster">
-  <div class="crown">👑</div>
-  <div class="small">WELCOME TO THE WORLD OF</div>
+  <section class="poster">
+    <div class="crown">👑</div>
 
-  <h1>VIHANI<br>QUEEN</h1>
+    <div class="small">WELCOME TO THE WORLD OF</div>
 
-  <div class="line"></div>
+    <h1>VIHANI<br>QUEEN</h1>
 
-  <div class="subtitle">
-    SPORTS ANALYSIS<br>
-    MATCH INSIGHTS • STRATEGY
-  </div>
+    <div class="line"></div>
 
-  <div class="orb">🏆</div>
+    <div class="subtitle">
+      SPORTS ANALYSIS<br>
+      MATCH INSIGHTS • STRATEGY
+    </div>
 
-  <div class="pills">
-    <div class="pill">✦ MATCH ANALYSIS</div>
-    <div class="pill">✦ EXPERT INSIGHTS</div>
-    <div class="pill">✦ SPORTS UPDATES</div>
-  </div>
+    <div class="orb">🏆</div>
 
-  <div class="line"></div>
-  <div class="bottom-line">YOUR GAME. YOUR INSIGHTS.</div>
+    <div class="pills">
+      <div class="pill">✦ MATCH ANALYSIS</div>
+      <div class="pill">✦ EXPERT INSIGHTS</div>
+      <div class="pill">✦ SPORTS UPDATES</div>
+    </div>
 
-  <!-- JOIN BUTTON INSIDE THE POSTER BOX -->
-  <a class="join"
-     href="https://t.me/+CgslPCjmOPI4MzU1"
-     target="_blank"
-     rel="noopener noreferrer">
-    <strong>👑 JOIN VIHANI QUEEN</strong>
-    <span>✈ JOIN TELEGRAM CHANNEL →</span>
-  </a>
+    <div class="line"></div>
 
-</section>
+    <div class="bottom-line">
+      YOUR GAME. YOUR INSIGHTS.
+    </div>
 
-<p class="note">
-Sports analysis, match insights and the latest updates.<br>
-Sports outcomes are uncertain; no result is guaranteed.
-</p>
+    <a class="join"
+       id="joinButton"
+       href="https://t.me/+CgslPCjmOPI4MzU1"
+       target="_blank"
+       rel="noopener noreferrer">
+      <strong>👑 JOIN VIHANI QUEEN</strong>
+      <span>✈️ JOIN TELEGRAM CHANNEL →</span>
+    </a>
+  </section>
 
-<footer>© 2026 VIHANI QUEEN</footer>
+  <p class="note">
+    Sports analysis, match insights and the latest updates.<br>
+    Sports outcomes are uncertain; no result is guaranteed.
+  </p>
+
+  <footer>© 2026 VIHANI QUEEN</footer>
 
 </main>
+
+<script>
+(function () {
+  const button = document.getElementById('joinButton');
+  let eventSent = false;
+
+  if (!button) return;
+
+  button.addEventListener('click', function () {
+    if (eventSent) return;
+    eventSent = true;
+
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'Subscribe');
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
